@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Navbar from '../components/Navbar'
-import './all.sass'
+import Header from '../components/Header'
+import './all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | We took a trip..." />
-    <Navbar />
+    <Helmet title="We Took A Trip..." />
+    <Header />
     <div>{children()}</div>
   </div>
 )
