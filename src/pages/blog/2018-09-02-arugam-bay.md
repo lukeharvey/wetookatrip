@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog-post'
+templateKey: "blog-post"
 title: Arugam Bay
 date: 2018-09-02T12:00:00.000Z
 description: >-
@@ -13,7 +13,11 @@ tags:
 
 Well, it feels like it’s been a little while since I last posted. Some of you may have seen my last post on instagram, which looked like this.
 
+![Instagram](/img/20180902_001.png)
+
 Immediately after which I came down with a really bad cold and spent the next couple days in bed. Luckily we had already planned to stay in Arugam Bay for at least 4 days and had splashed out a bit to have a nice place by the sea that’s been very comfortable ([Bay Vista](http://www.bayvistahotel.com/), highly recommend!). This was my view from bed.
+
+![View from bed](/img/20180902_002.jpg)
 
 I felt a bit betrayed that my body would allow me to get sick without even the chance of staying home from work for the day. I read A LOT of my book, Long Walk To Freedom by Nelson Mandela, and now I feel the South African government during apartheid was the root of all evil and I love Nelson Mandela (I’m sure this is pretty obvious and everyone else already felt this way). I also re-watched Far From the Madding Crowd and reaffirmed my love for Gabriel Oak. Luckily Luke had some work to do and enjoyed a bit of downtime while also being my caretaker.
 
@@ -26,3 +30,9 @@ On our way from Trincomalee to Arugam Bay we stayed for a night in Batticaloa at
 Tomorrow we are headed to Ella which should be a bit cooler and we plan to get in a bit of hiking!
 
 Some photos below of Arugam Bay and surrounding area. x
+
+![View from bed](/img/20180902_003.jpg)
+![View from bed](/img/20180902_004.jpg)
+![View from bed](/img/20180902_005.jpg)
+![View from bed](/img/20180902_006.jpg)
+![View from bed](/img/20180902_007.jpg)

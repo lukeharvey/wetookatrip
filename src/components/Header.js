@@ -1,12 +1,17 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
 
 const Header = () => (
-  <header className="Header">
-    <Link className="Header-link" to="/">
-      <h1 className="Header-title">We Took A Trip...</h1>
+  <header
+    style={{
+      margin: "9rem 0",
+      textAlign: "center"
+    }}
+  >
+    <Link to="/">
+      <h1>We Took A Trip...</h1>
     </Link>
   </header>
-)
+);
 
-export default Header
+export default Header;

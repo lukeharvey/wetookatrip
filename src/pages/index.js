@@ -1,55 +1,46 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React from "react";
+import PropTypes from "prop-types";
+import Link from "gatsby-link";
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section className="Index-section">
-        <div className="Index-container">
-          {posts
-            .map(({ node: post }) => (
-              <div
-                className="Index-post"
-                key={post.id}
+      <section>
+        {posts.map(({ node: post }) => (
+          <div key={post.id} style={{ marginTop: "6rem" }}>
+            <h2 style={{ textAlign: "center" }}>
+              <Link
+                to={post.fields.slug}
+                style={{ color: "#000", textDecoration: "none" }}
               >
-                <p>
-                  <Link to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                </p>
-                <Link className="Index-postLink" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
-              </div>
-            ))}
-        </div>
+                {post.frontmatter.title}
+              </Link>
+            </h2>
+            <p>{post.excerpt}</p>
+            <Link to={post.fields.slug}>Keep Reading →</Link>
+          </div>
+        ))}
       </section>
-    )
+    );
   }
 }
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+      edges: PropTypes.array
+    })
+  })
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
         node {
@@ -67,4 +58,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

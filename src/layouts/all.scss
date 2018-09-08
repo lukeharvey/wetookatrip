@@ -1,39 +1,13 @@
-.Header-link {
-  color: #000;
+a {
+  color: #2a2a2a;
+  font-family: "Times New Roman", "serif";
+  font-style: italic;
+  font-weight: bold;
   text-decoration: none;
-}
 
-.Header-title {
-  font-family: sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  margin-bottom: 75px;
-  margin-top: 75px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.Index-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 480px;
-  padding-bottom: 75px;
-}
-
-.Index-post {
-  margin-top: 75px;
-}
-
-.Index-postLink {
-  display: block;
-  margin-top: 20px;
-}
-
-.BlogEntry-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 480px;
-  padding-bottom: 75px;
+  &:visited {
+    color: #2a2a2a;
+  }
 }
 
 img {
