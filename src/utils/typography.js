@@ -5,6 +5,12 @@ const typography = new Typography({
   baseLineHeight: 2,
   bodyFontFamily: ["Lato", "sans-serif"],
   bodyWeight: 300,
+  googleFonts: [
+    {
+      name: "Lato",
+      styles: ["300", "300i"]
+    }
+  ],
   headerFontFamily: ["Times New Roman", "serif"],
   scaleRatio: 2,
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
