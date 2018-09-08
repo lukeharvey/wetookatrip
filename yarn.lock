@@ -1453,9 +1453,13 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@^3.0.5, bluebird@^3.3.4, bluebird@^3.4.7, bluebird@^3.5.0:
+bluebird@^3.0.5, bluebird@^3.3.4, bluebird@^3.5.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
+bluebird@^3.4.7:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
 
 bmp-js@0.0.3:
   version "0.0.3"
@@ -1840,6 +1844,17 @@ charenc@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
 
+cheerio@1.0.0-rc.2, cheerio@^1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
+  dependencies:
+    css-select "~1.2.0"
+    dom-serializer "~0.1.0"
+    entities "~1.1.1"
+    htmlparser2 "^3.9.1"
+    lodash "^4.15.0"
+    parse5 "^3.0.1"
+
 cheerio@^0.22.0:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
@@ -1860,17 +1875,6 @@ cheerio@^0.22.0:
     lodash.reduce "^4.4.0"
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
-
-cheerio@^1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.0"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash "^4.15.0"
-    parse5 "^3.0.1"
 
 chokidar@^1.0.0, chokidar@^1.6.1, chokidar@^1.7.0:
   version "1.7.0"
@@ -2653,6 +2657,14 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
+deep-map@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/deep-map/-/deep-map-1.5.0.tgz#eaa595cb81783ca2800f26a42e09f16e7d4fb890"
+  dependencies:
+    es6-weak-map "^2.0.2"
+    lodash "^4.17.4"
+    tslib "^1.6.0"
+
 deepmerge@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.1.1.tgz#e862b4e45ea0555072bf51e7fd0d9845170ae768"
@@ -3132,7 +3144,7 @@ es-to-primitive@^1.1.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.1"
 
-es5-ext@^0.10.12, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
+es5-ext@^0.10.12, es5-ext@^0.10.14, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
   version "0.10.46"
   resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.46.tgz#efd99f67c5a7ec789baa3daa7f79870388f7f572"
   dependencies:
@@ -3140,7 +3152,7 @@ es5-ext@^0.10.12, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
     es6-symbol "~3.1.1"
     next-tick "1"
 
-es6-iterator@~2.0.3:
+es6-iterator@^2.0.1, es6-iterator@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
   dependencies:
@@ -3169,6 +3181,15 @@ es6-template-strings@^2.0.0:
   dependencies:
     es5-ext "^0.10.12"
     esniff "^1.1"
+
+es6-weak-map@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/es6-weak-map/-/es6-weak-map-2.0.2.tgz#5e3ab32251ffd1538a1f8e5ffa1357772f92d96f"
+  dependencies:
+    d "1"
+    es5-ext "^0.10.14"
+    es6-iterator "^2.0.1"
+    es6-symbol "^3.1.1"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3626,7 +3647,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.14, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -4008,13 +4029,12 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-netlify-cms@^1.0.9:
-  version "1.0.12"
-  resolved "http://registry.npmjs.org/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-1.0.12.tgz#961144f45cf76aaa351b639777635f70a52001e7"
+gatsby-plugin-netlify-cms@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-2.0.1.tgz#1c22c3b4019486436295cfb6ee8180658847dbd8"
   dependencies:
     html-webpack-include-assets-plugin "^1.0.2"
     html-webpack-plugin "^2.30.1"
-    netlify-cms "^1.0.1"
     netlify-identity-widget "^1.4.11"
 
 gatsby-plugin-netlify@^1.0.19:
@@ -4100,6 +4120,17 @@ gatsby-remark-images@^1.5.50:
     lodash "^4.17.4"
     slash "^1.0.0"
     unist-util-select "^1.5.0"
+
+gatsby-remark-relative-images@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-0.1.2.tgz#6e53347b273e5dee92fea101482b7ff2f467558c"
+  dependencies:
+    cheerio "1.0.0-rc.2"
+    deep-map "1.5.0"
+    is-relative-url "2.0.0"
+    lodash "4.17.5"
+    slash "2.0.0"
+    unist-util-select "1.5.0"
 
 gatsby-source-filesystem@^1.5.23:
   version "1.5.39"
@@ -5594,7 +5625,7 @@ is-regex@^1.0.4:
   dependencies:
     has "^1.0.1"
 
-is-relative-url@^2.0.0:
+is-relative-url@2.0.0, is-relative-url@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-relative-url/-/is-relative-url-2.0.0.tgz#72902d7fe04b3d4792e7db15f9db84b7204c9cef"
   dependencies:
@@ -6403,6 +6434,10 @@ lodash@4.11.1:
   version "4.11.1"
   resolved "http://registry.npmjs.org/lodash/-/lodash-4.11.1.tgz#a32106eb8e2ec8e82c241611414773c9df15f8bc"
 
+lodash@4.17.5:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+
 log-symbols@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-1.0.2.tgz#376ff7b58ea3086a0f09facc74617eca501e1a18"
@@ -6886,7 +6921,7 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-netlify-cms@^1.0.1, netlify-cms@^1.7.0:
+netlify-cms@^1.7.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.9.3.tgz#f65d82b7779983e471fc40307c900ed809dc2819"
   dependencies:
@@ -8645,13 +8680,13 @@ react-dom@^15.6.0:
     prop-types "^15.5.10"
 
 react-dom@^16.0.0:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.2.tgz#4afed569689f2c561d2b8da0b819669c38a0bda4"
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.3.0"
 
 react-error-overlay@^3.0.0:
   version "3.0.0"
@@ -8681,8 +8716,8 @@ react-hot-loader@^3.0.0-beta.6:
     source-map "^0.6.1"
 
 react-hot-loader@^4.0.0:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.5.tgz#d8659839d8072d4b78938a776f29f5f1d2a40170"
+  version "4.3.6"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.3.6.tgz#26e1491f08daf2bad99d141b1927c9faadef2fb4"
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
@@ -8697,7 +8732,7 @@ react-immutable-proptypes@^2.1.0:
 
 react-is@16.3.1:
   version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.1.tgz#ee66e6d8283224a83b3030e110056798488359ba"
+  resolved "http://registry.npmjs.org/react-is/-/react-is-16.3.1.tgz#ee66e6d8283224a83b3030e110056798488359ba"
 
 react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -8867,14 +8902,14 @@ react@^15.6.0:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react@^16.0.0, react@^16.2.0:
-  version "16.4.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+react@^16.0.0, react@^16.5.0:
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.5.0.tgz#f2c1e754bf9751a549d9c6d9aca41905beb56575"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    schedule "^0.3.0"
 
 read-all-stream@^3.0.0:
   version "3.1.0"
@@ -9655,6 +9690,12 @@ sc-formatter@^3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/sc-formatter/-/sc-formatter-3.0.2.tgz#9abdb14e71873ce7157714d3002477bbdb33c4e6"
 
+schedule@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.3.0.tgz#1be2ab2fc2e768536269ce7326efb478d6c045e8"
+  dependencies:
+    object-assign "^4.1.1"
+
 schema-utils@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
@@ -9929,6 +9970,10 @@ simple-swizzle@^0.2.2:
   resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
   dependencies:
     is-arrayish "^0.3.1"
+
+slash@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -11047,7 +11092,7 @@ unist-util-remove-position@^1.0.0, unist-util-remove-position@^1.1.1:
   dependencies:
     unist-util-visit "^1.1.0"
 
-unist-util-select@^1.5.0:
+unist-util-select@1.5.0, unist-util-select@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
   dependencies:
@@ -11541,8 +11586,8 @@ websocket-extensions@>=0.1.1:
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
 
 what-input@^5.0.3:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/what-input/-/what-input-5.1.1.tgz#46bfd76b559ccc343bcd74c235a310b579f1ca05"
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/what-input/-/what-input-5.1.2.tgz#a27e8a86650a1089fd0fe3393dd74fcd141f85e6"
 
 whatwg-fetch@>=0.10.0:
   version "2.0.4"

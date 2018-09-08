@@ -31,8 +31,12 @@ Tomorrow we are headed to Ella which should be a bit cooler and we plan to get i
 
 Some photos below of Arugam Bay and surrounding area. x
 
-![View from bed](/img/20180902_003.jpg)
-![View from bed](/img/20180902_004.jpg)
-![View from bed](/img/20180902_005.jpg)
-![View from bed](/img/20180902_006.jpg)
-![View from bed](/img/20180902_007.jpg)
+![](/img/20180902_003.jpg) A caption
+
+![](/img/20180902_004.jpg) A caption
+
+![](/img/20180902_005.jpg) A caption
+
+![](/img/20180902_006.jpg) A caption
+
+![](/img/20180902_007.jpg) A caption
