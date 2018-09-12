@@ -13,7 +13,7 @@ const typography = new Typography({
   ],
   headerFontFamily: ["Times New Roman", "serif"],
   scaleRatio: 2,
-  overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+  overrideStyles: () => ({
     h1: {
       fontFamily: "Lato",
       fontSize: "48px",

@@ -2,8 +2,7 @@
 templateKey: blog-post
 title: Uppuveli & Nilaveli
 date: 2018-08-31T12:00:00.000Z
-description: >-
-  An update from Trincomalee
+description: Uppuveli & Nilaveli
 tags:
   - sri lanka
   - uppuveli
@@ -18,4 +17,12 @@ Today is a Poya day (every full moon is a public holiday) and we saw lots of peo
 
 See below photos of the island vibezzzz
 
-![flavor wheel](/img/flavor_wheel.jpg)
+![](/img/20180831_01.jpg)
+
+![](/img/20180831_02.jpg)
+
+![](/img/20180831_03.jpg)
+
+![](/img/20180831_04.jpg)
+
+![](/img/20180831_05.jpg)
