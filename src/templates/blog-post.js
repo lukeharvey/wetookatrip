@@ -1,16 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Tags from "../components/Tags";
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   date,
-  description,
   tags,
   title,
   helmet
@@ -23,18 +22,7 @@ export const BlogPostTemplate = ({
       <h2 style={{ textAlign: "center" }}>{title}</h2>
       <p>Published: {date}</p>
       <PostContent content={content} />
-      {tags && tags.length ? (
-        <div style={{ marginTop: "3rem" }}>
-          <h3>Tags</h3>
-          <ul className="taglist">
-            {tags.map(tag => (
-              <li key={tag + `tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+      <Tags tags={tags} />
     </section>
   );
 };
@@ -45,7 +33,7 @@ BlogPostTemplate.propTypes = {
   date: PropTypes.string,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet)
+  helmet: PropTypes.object
 };
 
 const BlogPost = ({ data }) => {
@@ -58,9 +46,9 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         date={post.frontmatter.date}
         description={post.frontmatter.description}
-      helmet={
-        <Helmet title={`${post.frontmatter.title} | We Took A Trip...`} />
-      }
+        helmet={
+          <Helmet title={`${post.frontmatter.title} | We Took A Trip...`} />
+        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

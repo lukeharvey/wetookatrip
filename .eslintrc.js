@@ -11,7 +11,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react"],
+  plugins: ["react", "jsx-a11y", "import"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
