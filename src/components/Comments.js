@@ -25,7 +25,7 @@ const Comments = ({ comments, slug }) => (
       method="POST"
       action="https://powerful-sands-26975.herokuapp.com/v2/entry/lukeharvey/wetookatrip/master/comments"
     >
-      <input name="options[slug]" type="hidden" value={slug} />
+      <input name="fields[slug]" type="hidden" value={slug} />
       <input name="fields[name]" type="text" placeholder="Name" required />
       <input name="fields[email]" type="email" placeholder="Email" required />
       <textarea name="fields[message]" placeholder="Comment" required />
