@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
-import Link from "gatsby-link";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 export const BlogPostTemplate = ({
@@ -39,7 +40,7 @@ export const BlogPostTemplate = ({
 };
 
 BlogPostTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   date: PropTypes.string,
   description: PropTypes.string,
@@ -51,17 +52,19 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <BlogPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
-      date={post.frontmatter.date}
-      description={post.frontmatter.description}
+    <Layout>
+      <BlogPostTemplate
+        content={post.html}
+        contentComponent={HTMLContent}
+        date={post.frontmatter.date}
+        description={post.frontmatter.description}
       helmet={
         <Helmet title={`${post.frontmatter.title} | We Took A Trip...`} />
       }
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
-    />
+        tags={post.frontmatter.tags}
+        title={post.frontmatter.title}
+      />
+    </Layout>
   );
 };
 

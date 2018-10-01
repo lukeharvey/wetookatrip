@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/Layout";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -8,22 +9,24 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section>
-        {posts.map(({ node: post }) => (
-          <div key={post.id} style={{ marginTop: "6rem" }}>
-            <h2 style={{ textAlign: "center" }}>
-              <Link
-                to={post.fields.slug}
-                style={{ color: "#000", textDecoration: "none" }}
-              >
-                {post.frontmatter.title}
-              </Link>
-            </h2>
-            <p>{post.excerpt}</p>
-            <Link to={post.fields.slug}>Keep Reading →</Link>
-          </div>
-        ))}
-      </section>
+      <Layout>
+        <section>
+          {posts.map(({ node: post }) => (
+            <div key={post.id} style={{ marginTop: "6rem" }}>
+              <h2 style={{ textAlign: "center" }}>
+                <Link
+                  to={post.fields.slug}
+                  style={{ color: "#000", textDecoration: "none" }}
+                >
+                  {post.frontmatter.title}
+                </Link>
+              </h2>
+              <p>{post.excerpt}</p>
+              <Link to={post.fields.slug}>Keep Reading →</Link>
+            </div>
+          ))}
+        </section>
+      </Layout>
     );
   }
 }
