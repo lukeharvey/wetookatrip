@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Tags from "../components/Tags";
+import Comments from "../components/Comments";
 
 export const BlogPostTemplate = ({
   content,
@@ -23,6 +24,7 @@ export const BlogPostTemplate = ({
       <p>Published: {date}</p>
       <PostContent content={content} />
       <Tags tags={tags} />
+      <Comments />
     </section>
   );
 };
