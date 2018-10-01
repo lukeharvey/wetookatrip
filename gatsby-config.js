@@ -47,6 +47,14 @@ module.exports = {
         ]
       }
     },
+    "gatsby-transformer-yaml",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/_data/comments`,
+        name: "comments"
+      }
+    },
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
